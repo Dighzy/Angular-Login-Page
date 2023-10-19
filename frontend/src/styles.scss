@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; overflow-y: hidden;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+background-color: #352f2f;
+ /* Oculta a barra de rolagem horizontal */
+max-width: 100%;     /* Define a largura máxima como 100% da janela do navegador */
+
+  }

@@ -1,0 +1,64 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+<ng-container class="container">
+      <div class="content first-content">
+          <div class="first-column">
+              <h2 class="title title-primary">Bem vindo de volta</h2>
+              <p class="description description-primary">Para manter-se conectado conosco</p>
+              <p class="description description-primary">Faça o login com suas informações pessoais</p>
+              <button #signin class="btn btn-primary">Fazer Login</button>
+          </div>
+          <div class="second-column">
+              <h2 class="title title-second">Criar Conta</h2>
+              <div class="social-media">
+                  <ul class="list-social-media">
+                      <a class="link-social-media" href="#">
+                          <li class="item-social-media">
+                              <i class="fab fa-facebook-f"></i>
+                          </li>
+                       </a>
+                       <a class="link-social-media" href="#">
+                          <li class="item-social-media">
+                              <i class="fab fa-google-plus-g"></i>
+                          </li>
+                       </a>
+                       <a class="link-social-media" href="#">
+                          <li class="item-social-media">
+                              <i class="fab fa-linkedin-in"></i>
+                          </li>
+                      </a>
+                  </ul>
+              </div><!-- social media -->
+                  <p class="description description-second">ou use seu e-mail para registro:</p>
+                      
+          <form [formGroup]="signupForm" (ngSubmit)="signup()" novalidate class="form">
+              <mat-form-field>
+              <mat-label class="label-input" >First name</mat-label>
+    <input matInput placeholder="Ex. Jon" formControlName="name" />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label class="label-input">Email</mat-label>
+    <input matInput placeholder="Ex. Jon" formControlName="email" />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label class="label-input" >Password</mat-label>
+    <input
+      matInput
+      type="password"
+      placeholder="Ex. Jon"
+      formControlName="password"
+    />
+  </mat-form-field>
+  <button class="btn btn-second"
+    color="accent"
+    [disabled]="!signupForm.valid"
+    mat-raised-button
+    type="submit"
+  >
+    <span>Registrar-Se</span>
+  </button>
+          </form>
+          </div><!-- second column-->
+      </div>
+
+</ng-container>>

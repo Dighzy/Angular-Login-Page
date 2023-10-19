@@ -1,0 +1,12 @@
+.container{
+  display: flex;
+  flex-direction: column; /* Garante alinhamento vertical */
+  justify-content: center;
+  align-items: center;
+  background-color: #352f2f;
+  margin: 130px;
+}
+body {
+  margin: 0;
+  padding: 0;
+}

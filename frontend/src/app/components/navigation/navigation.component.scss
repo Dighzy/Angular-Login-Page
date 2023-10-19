@@ -1,0 +1,19 @@
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 64px;
+  background-color: #008B8B;
+  a {
+    text-decoration: none;
+    &.active-link {
+      color: white;
+    }
+    span {
+      margin-left: 24px;
+    }
+  }
+}
+.mat-toolbar.mat-accent {
+  background-color: #008B8B;
+  color: #fff;
+}
