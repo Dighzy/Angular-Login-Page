@@ -3,6 +3,7 @@ mat-toolbar {
   justify-content: space-between;
   padding: 0 64px;
   background-color: #008B8B;
+  color: white !important;
   a {
     text-decoration: none;
     &.active-link {
@@ -10,6 +11,7 @@ mat-toolbar {
     }
     span {
       margin-left: 24px;
+      color: white;
     }
   }
 }

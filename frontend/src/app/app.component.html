@@ -1,4 +1,6 @@
-<app-navigation></app-navigation>
+<ng-container *ngIf="mostrarAppNavigation()">
+  <app-navigation></app-navigation>
+</ng-container>
 <div class="container">
   <router-outlet></router-outlet>
 </div>

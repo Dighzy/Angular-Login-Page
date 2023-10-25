@@ -3,10 +3,25 @@
   flex-direction: column; /* Garante alinhamento vertical */
   justify-content: center;
   align-items: center;
-  background-color: #352f2f;
   margin: 130px;
 }
 body {
   margin: 0;
   padding: 0;
+}
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 64px;
+  background-color: #008B8B;
+  color: white !important;
+  a {
+    text-decoration: none;
+    &.active-link {
+      color: white;
+    }
+    span {
+      margin-left: 24px;
+    }
+  }
 }

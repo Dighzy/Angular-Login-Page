@@ -9,7 +9,7 @@ import { LoginComponent } from "./components/login/login.component";
 import { SignupComponent } from "./components/signup/signup.component";
 
 const routes: Routes = [
-  { path: "", component: HomeComponent },
+  { path: "", component: LoginComponent },
   { path: "posts", component: PostsComponent, canActivate: [AuthGuard] },
   { path: "login", component: LoginComponent },
   { path: "signup", component: SignupComponent },
@@ -21,3 +21,4 @@ const routes: Routes = [
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
+
