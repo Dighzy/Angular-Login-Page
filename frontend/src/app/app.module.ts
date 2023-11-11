@@ -18,10 +18,12 @@ import { NavigationComponent } from "./components/navigation/navigation.componen
 import { SignupComponent } from "./components/signup/signup.component";
 import { LoginComponent } from "./components/login/login.component";
 import { HomeComponent } from "./components/home/home.component";
-import { PostsComponent } from "./components/posts/posts.component";
 import { CreatePostComponent } from "./components/create-post/create-post.component";
 
 import { AuthInterceptorService } from "./services/auth-interceptor.service";
+import { ChatbotComponent } from './components/chatbot/chatbot.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -30,8 +32,9 @@ import { AuthInterceptorService } from "./services/auth-interceptor.service";
     SignupComponent,
     LoginComponent,
     HomeComponent,
-    PostsComponent,
+
     CreatePostComponent,
+    ChatbotComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,6 +48,7 @@ import { AuthInterceptorService } from "./services/auth-interceptor.service";
     MatToolbarModule,
     ReactiveFormsModule,
     HttpClientModule,
+    FormsModule,
   ],
   providers: [
     {
