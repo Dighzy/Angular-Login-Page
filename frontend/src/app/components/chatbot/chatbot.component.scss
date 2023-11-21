@@ -1,4 +1,5 @@
 /* Estilos para o container do chat */
+
 .chat-container {
   display: flex;
   flex-direction: column;
@@ -60,4 +61,12 @@
 
 .input-container button:hover {
   background-color: #27ae60;
+}
+
+.btn-send{
+  background-color: #005387!important;
+}
+
+.user, .assistant{
+  margin-bottom: 10px;
 }

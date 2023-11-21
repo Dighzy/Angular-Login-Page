@@ -25,11 +25,33 @@ export class ChatbotComponent {
   sendMessage() {
     const userMessage = this.userMessage;
     this.chatMessages.push({ role: 'user', content: userMessage });
-    this.openAiApiService.sendMessage(this.userMessage)
+  
+    // Exibe "Digitando..." enquanto aguarda a resposta da API
+    this.displayTypingIndicator();
+  
+    this.openAiApiService.sendMessage(userMessage)
       .subscribe(res => {
+        // Limpa o indicador de digitação quando a resposta da API é recebida
+        this.clearTypingIndicator();
+  
         this.assistantReply = res.reply;
         this.chatMessages.push({ role: 'assistant', content: this.assistantReply });
         this.userMessage = '';
-        });
+      });
   }
+  
+  displayTypingIndicator() {
+    this.chatMessages.push({ role: 'assistant', content: 'Digitando...' });
+  }
+  
+  clearTypingIndicator() {
+    // Remove a última mensagem "Digitando..."
+    const typingMessageIndex = this.chatMessages.findIndex(message =>
+      message.role === 'assistant' && message.content === 'Digitando...'
+    );
+    if (typingMessageIndex !== -1) {
+      this.chatMessages.splice(typingMessageIndex, 1);
+    }
+  }
+  
 }
