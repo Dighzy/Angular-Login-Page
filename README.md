@@ -1,23 +1,16 @@
-# Login System
+# Unibot -  Sistema ChatBot Unicesumar 
+## Desenvolvidos pelos alunos 
+Diogo henrique - 22013750-2
+João Pedro - 22262071-2
+Alisson Augsuto -
+Abel lopes -
 
 ## Angular, Node, and MySQL
 
-1. Navigate to backend/config/config.json and change the password to your MySQL password.
-
-```json
-{
-  "host": "localhost",
-  "user": "root",
-  "database": "posts",
-  "password": "< password >"
-}
-```
-
-Note: For development purposes the host is localhost but this will need to be updated if you decide to deploy the application. By Default, MySQL gives the user 'root' with all privileges. You can simply change this to another user if desired. In this application we named our database 'posts', however, if you went with a different name this will need to be changed.
-
-2. cd backend
-3. \$ npm install
-4. \$ npm start
-5. cd ../frontend
-6. \$ npm install
-7. \$ npm start
+## Utilização passo a passo
+1. cd backend
+2. \$ npm install
+3. \$ npm start
+4. cd ../frontend
+5. \$ npm install
+6. \$ npm start
